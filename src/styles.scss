@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", Roboto,
+    "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
