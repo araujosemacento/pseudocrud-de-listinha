@@ -2,7 +2,7 @@
   <header>
     <div>
       <mat-form-field>
-        <mat-label>kkkkkkkkkkk</mat-label>
+        <mat-label>Item</mat-label>
         <input
           matInput
           type="text"
@@ -14,13 +14,26 @@
           matSuffix
           mat-icon-button
           aria-label="Clear"
+          matTooltip="Limpar caixa de texto"
           (click)="value = ''"
         >
           <mat-icon>close</mat-icon>
         </button>
         }
       </mat-form-field>
-      <button (click)="addItem()">UAU!!!!</button>
+      <button
+        mat-stroked-button
+        disabled="{{ value === '' ? true : false }}"
+        disabledInteractive
+        matTooltip="{{
+          value === ''
+            ? 'Escreva algo na caixa de texto para adicionar à lista!'
+            : 'Adicionar conteúdo à lista!'
+        }}"
+        (click)="addItem()"
+      >
+        Adicionar
+      </button>
     </div>
   </header>
   <div>
@@ -32,6 +45,7 @@
           matSuffix
           mat-icon-button
           aria-label="Remove"
+          matTooltip="Remover item da lista"
           (click)="removeItem(item)"
         >
           <mat-icon>close</mat-icon>

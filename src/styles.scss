@@ -37,8 +37,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
 }
 
 button {
@@ -46,4 +44,9 @@ button {
   margin: 10px;
   padding: 10px;
   justify-content: center;
+}
+
+.mat-mdc-tooltip-surface,
+.mat-mdc-tooltip__surface {
+  text-justify: center;
 }

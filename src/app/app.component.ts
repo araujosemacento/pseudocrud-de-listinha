@@ -5,8 +5,9 @@ import { MatDivider } from '@angular/material/divider';
 import { MatList } from '@angular/material/list';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 
 @Component({
@@ -19,8 +20,9 @@ import { NgFor } from '@angular/common';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    FormsModule,
+    MatTooltipModule,
     MatFormFieldModule,
+    FormsModule,
     NgFor,
   ],
   templateUrl: './app.component.html',
